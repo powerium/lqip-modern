@@ -10,9 +10,14 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: yarn
 
-      - run: yarn install --frozen-lockfile
+      - name: install deps
+        run: yarn install --frozen-lockfile
+
+      - name: install sharp
+        run: yarn add sharp --ignore-engines
+
       - name: test
         run: yarn test
