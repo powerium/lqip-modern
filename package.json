@@ -19,7 +19,7 @@
     "deploy": "gh-pages -d demo"
   },
   "dependencies": {
-    "p-map": "^4.0.0",
+    "p-map": "^6.0.0",
     "sharp": "^0.33.3"
   },
   "devDependencies": {
